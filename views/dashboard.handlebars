@@ -1,4 +1,4 @@
-<section>
+<section class="new-post-container">
     <h2>Create New Post</h2>
 
     <form class="new-post-form">
@@ -10,13 +10,15 @@
             <label for="post-url">Link</label>
             <input id="post-url" name="post-url" />
         </div>
-        <button type="submit" class="btn">Create</button>
+        <div>
+            <button type="submit" class="btn">Create</button>
+        </div>
     </form>
 </section>
 
 {{#if posts.length}}
 <section>
-    <h2>Your Posts</h2>
+    <h2 class="your-posts">Your Posts</h2>
     <ol>
         {{#each posts as |post|}}
         <li>

@@ -74,7 +74,7 @@ router.post('/', (req, res) => {
         .then(dbPostData => res.json(dbPostData))
         .catch(err => {
             console.log(err);
-            res.status(500).json(err);
+            res.status(404).json({ message: 'Must be a valid link' });
         });
 });
 

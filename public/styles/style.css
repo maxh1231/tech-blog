@@ -37,6 +37,10 @@ header nav a {
     padding: 0 10px
 }
 
+#logout:hover {
+    cursor: pointer;
+}
+
 .post-list li {
     padding: 20px 0;
     border-bottom: 1px solid #03045E;
@@ -86,4 +90,31 @@ footer {
 
 .login-form button:hover, .signup-form button:hover {
     cursor: pointer;
+}
+
+.new-post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-post-form div {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-post-form button {
+    font-size: 1.15rem;
+    padding: 5px 20px;
+}
+
+.new-post-form button:hover {
+    cursor: pointer;
+}
+
+.your-posts {
+    margin-left: 30px;
 }
