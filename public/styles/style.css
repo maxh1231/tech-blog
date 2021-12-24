@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #CAF0F8;
+    color: #023E8A
 }
 
 header {
@@ -20,8 +22,68 @@ header {
     padding: 0 30px;
 }
 
+a {
+    color: #023E8A;
+}
+
+header nav {
+    margin-right: 30px;
+}
+
 header nav a {
     font-size: 1.5rem;
     text-decoration: none;
     color: #ADE8F4;
+    padding: 0 10px
+}
+
+.post-list li {
+    padding: 20px 0;
+    border-bottom: 1px solid #03045E;
+}
+
+
+footer {
+    padding-left: 30px;
+}
+
+.login-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.login-form, .signup-form {
+    
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ADE8F4;
+    background-color: #03045E;
+    border: 2px solid #03045E;
+    border-radius: 10px;
+}
+
+.login-form div, .signup-form div {
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.signup-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.login-form button, .signup-form button {
+    font-size: 1.15rem;
+    padding: 5px 20px;
+}
+
+.login-form button:hover, .signup-form button:hover {
+    cursor: pointer;
 }
