@@ -1,0 +1,17 @@
+<header>
+    <h1>
+        <a href="/" class="header-title">TechBlog</a>
+    </h1>
+    <nav>
+
+        <a href="/dashboard">dashboard</a>
+        {{#if loggedIn}}
+        <button id="logout" class="btn-no-style">logout</button>
+        {{/if}}
+
+        {{#unless loggedIn}}
+        <a href="/login">login</a>
+        {{/unless}}
+
+    </nav>
+</header>
