@@ -1,18 +1,27 @@
-{{> post-info post}}
+<section class="single-post-container">
 
-{{#if loggedIn}}
-<form class="comment-form">
-    <div>
-        <textarea name="comment-body"></textarea>
+    <div class="post-meta-container">
+        {{> post-info post}}
+
+
+        {{#if loggedIn}}
+        <form class="comment-form">
+            <div>
+                <textarea name="comment-body"></textarea>
+            </div>
+
+            <div>
+                <button type="submit">add comment</button>
+            </div>
+        </form>
     </div>
+    {{/if}}
 
-    <div>
-        <button type="submit">add comment</button>
+    <div class="comments">
+        <h2 class="comments-header">comments</h2>
+        {{> comments post.comments}}
     </div>
-</form>
-{{/if}}
-
-{{> comments post.comments}}
+</section>
 
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
